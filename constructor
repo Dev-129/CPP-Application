@@ -1,0 +1,29 @@
+#include<iostream>
+useing namespace std;
+class Demo
+{
+public:
+int X;
+int Y;
+Demo()
+{
+cout<<"inside default constructor\n";
+}
+Demo(int i,int j)
+{
+cout<<"inside parametrised constructor\n";
+}
+Demo(Demo &ref)
+{
+cout<<"inside copy constructor\n";
+}
+~Demo()
+{
+cout<<"inside destructor\n";
+}
+};
+int main()
+{
+Demo obj1;
+return 0;
+}
